@@ -12,12 +12,14 @@ fn main() {
 }
 
 fn is_palindrome(n: u32) -> bool {
-    let str = n.to_string();
-    let mut chars = str.chars().collect::<Vec<char>>();
-    chars.reverse();
-    let mut reverse_str = String::new();
-    for ch in chars {
-        reverse_str.push(ch);
+    return n == reverse_int(n);
+}
+
+fn reverse_int(mut n: u32) -> u32 {
+    let mut reversed = 0;
+    while n > 0 {
+        reversed = 10 * reversed + n % 10;
+        n /= 10;
     }
-    return str == reverse_str;
+    return reversed;
 }
