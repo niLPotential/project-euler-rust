@@ -1,4 +1,4 @@
-const MAX_LIMIT: i32 = 4000000;
+const MAX_LIMIT: u32 = 4000000;
 
 fn main() {
     let mut sum_of_even_fibonacci = 0;

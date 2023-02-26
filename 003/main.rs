@@ -1,4 +1,4 @@
-const TARGET: i64 = 600851475143;
+const TARGET: u64 = 600851475143;
 
 fn main() {
     let mut primes = vec![2, 3];
@@ -30,11 +30,11 @@ fn main() {
     println!("Problem 003: {}", target_copy);
 }
 
-fn is_prime_factor(n: i64, p: i64) -> bool {
+fn is_prime_factor(n: u64, p: u64) -> bool {
     return n % p == 0;
 }
 
-fn is_prime(n: i64, primes: &Vec<i64>) -> bool {
+fn is_prime(n: u64, primes: &Vec<u64>) -> bool {
     for p in primes {
         if n % p == 0 {
             return false;
