@@ -34,3 +34,7 @@ path = "006/main.rs"
 [[bin]]
 name = "007"
 path = "007/main.rs"
+
+[[bin]]
+name = "008"
+path = "008/main.rs"
