@@ -10,5 +10,5 @@ fn main() {
 
 fn sum_below_thousand(n: u32) -> u32 {
     let div = (1000 - 1) / n;
-    return n * div * (div + 1) / 2;
+    n * div * (div + 1) / 2
 }

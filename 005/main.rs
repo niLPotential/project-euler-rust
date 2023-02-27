@@ -7,7 +7,7 @@ fn main() {
 }
 
 fn least_common_multiple(a: u32, b: u32) -> u32 {
-    return a * b / greatest_common_divisor(a, b);
+    a * b / greatest_common_divisor(a, b)
 }
 
 fn greatest_common_divisor(mut a: u32, mut b: u32) -> u32 {
@@ -18,5 +18,5 @@ fn greatest_common_divisor(mut a: u32, mut b: u32) -> u32 {
     while b != 0 {
         (a, b) = (b, a % b);
     }
-    return a;
+    a
 }

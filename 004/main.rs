@@ -15,14 +15,14 @@ fn main() {
 
 fn get_b(a: u32) -> (u32, u32) {
     if a % 11 == 0 {
-        return (999, 1);
+        (999, 1)
     } else {
-        return (990, 11);
+        (990, 11)
     }
 }
 
 fn is_palindrome(n: u32) -> bool {
-    return n == reverse_int(n);
+    n == reverse_int(n)
 }
 
 fn reverse_int(mut n: u32) -> u32 {
@@ -31,5 +31,5 @@ fn reverse_int(mut n: u32) -> u32 {
         reversed = 10 * reversed + n % 10;
         n /= 10;
     }
-    return reversed;
+    reversed
 }

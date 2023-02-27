@@ -31,7 +31,7 @@ fn main() {
 }
 
 fn is_prime_factor(n: u64, p: u64) -> bool {
-    return n % p == 0;
+    n % p == 0
 }
 
 fn is_prime(n: u64, primes: &Vec<u64>) -> bool {
@@ -40,5 +40,5 @@ fn is_prime(n: u64, primes: &Vec<u64>) -> bool {
             return false;
         }
     }
-    return true;
+    true
 }
