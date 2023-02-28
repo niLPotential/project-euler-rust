@@ -1,33 +1,28 @@
 const LIMIT: usize = 2_000_000;
-
+const SIEVEBOUND: usize = LIMIT / 2 - 1;
 fn main() {
-    // zero-based array indexing
-    let mut sieve = [false; LIMIT];
+    // index i corresponds to p=2*i+1
+    let mut sieve = [false; SIEVEBOUND];
+    // 1 is not a prime number
     sieve[0] = true;
-    sieve[LIMIT - 1] = true;
 
-    let mut n = 4;
-    while n < LIMIT {
-        sieve[n - 1] = true;
-        n += 2;
-    }
+    let crosslimit = ((LIMIT as f32).sqrt() as usize - 1) / 2;
 
-    let mut n = 3;
-    while n * n < LIMIT {
-        if !sieve[n - 1] {
-            let mut m = n * n;
-            while m < LIMIT {
-                sieve[m - 1] = true;
-                m += 2 * n
+    for i in 1..=crosslimit {
+        if !sieve[i] {
+            let mut j = 2 * i * (i + 1);
+            while j < SIEVEBOUND {
+                sieve[j] = true;
+                j += 2 * i + 1;
             }
         }
-        n += 2;
     }
 
-    let mut sum = 0;
+    // 2 is a prime number
+    let mut sum = 2;
     for (i, p) in sieve.iter().enumerate() {
         if !p {
-            sum += i + 1;
+            sum += 2 * i + 1;
         }
     }
 
