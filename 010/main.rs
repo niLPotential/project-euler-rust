@@ -1,33 +1,35 @@
-const TARGET: u32 = 2_000_000;
+const LIMIT: usize = 2_000_000;
+
 fn main() {
-    let mut primes = vec![2, 3];
+    // zero-based array indexing
+    let mut sieve = [false; LIMIT];
+    sieve[0] = true;
+    sieve[LIMIT - 1] = true;
 
-    let mut i = 1;
-    while 6 * i < TARGET {
-        let maybe_prime = 6 * i - 1;
-        if is_prime(maybe_prime, &primes) {
-            primes.push(maybe_prime);
-        }
-        let maybe_prime = 6 * i + 1;
-        if is_prime(maybe_prime, &primes) {
-            primes.push(maybe_prime);
-        }
-        i += 1;
+    let mut n = 4;
+    while n < LIMIT {
+        sieve[n - 1] = true;
+        n += 2;
     }
 
-    let mut prime_sum: u64 = 0;
-    for p in primes {
-        prime_sum += u64::from(p);
+    let mut n = 3;
+    while n * n < LIMIT {
+        if !sieve[n - 1] {
+            let mut m = n * n;
+            while m < LIMIT {
+                sieve[m - 1] = true;
+                m += 2 * n
+            }
+        }
+        n += 2;
     }
 
-    println!("Problem 010: {prime_sum}");
-}
-
-fn is_prime(n: u32, primes: &Vec<u32>) -> bool {
-    for p in primes {
-        if n % p == 0 {
-            return false;
+    let mut sum = 0;
+    for (i, p) in sieve.iter().enumerate() {
+        if !p {
+            sum += i + 1;
         }
     }
-    true
+
+    println!("Problem 010: {sum}");
 }
