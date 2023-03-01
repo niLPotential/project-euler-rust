@@ -1,10 +1,19 @@
 const TARGET: u32 = 500;
 fn main() {
-    // starting at lower n will cause 'index out of bounds' at fn primes
-    let mut n = 10;
+    let mut n = 0;
 
-    while divisors(triangle(n)) < TARGET {
+    loop {
         n += 1;
+        let d;
+        if n % 2 == 0 {
+            d = divisors(n / 2) * divisors(n + 1);
+        } else {
+            d = divisors(n) * divisors((n + 1) / 2)
+        }
+
+        if d > TARGET {
+            break;
+        }
     }
 
     println!("Problem 012: {}", triangle(n));
@@ -27,6 +36,10 @@ fn divisors(mut n: u32) -> u32 {
 }
 
 fn primes(limit: u32) -> Vec<u32> {
+    // prevent subtraction overflow or index out of bounds
+    if limit < 4 {
+        return Vec::new();
+    }
     let sievebound = (limit / 2 - 1) as usize;
     let mut sieve = vec![false; sievebound];
     sieve[0] = true;
