@@ -8,7 +8,7 @@ impl BigNumber {
     fn from_string(mut s: String) -> Self {
         let mut big_num = Vec::new();
 
-        while s.len() > 0 {
+        while !s.is_empty() {
             let small_num = s.drain(..10).collect::<String>();
             big_num.push(small_num.parse().expect("Failed to parse String to u64"));
         }

@@ -4,12 +4,12 @@ fn main() {
 
     loop {
         n += 1;
-        let d;
-        if n % 2 == 0 {
-            d = divisors(n / 2) * divisors(n + 1);
+
+        let d = if n % 2 == 0 {
+            divisors(n / 2) * divisors(n + 1)
         } else {
-            d = divisors(n) * divisors((n + 1) / 2)
-        }
+            divisors(n) * divisors((n + 1) / 2)
+        };
 
         if d > TARGET {
             break;

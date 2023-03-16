@@ -23,8 +23,8 @@ fn main() {
     for col in 0..grid.len() {
         for row in 0..(grid.len() - LENGTH) {
             let mut product = 1;
-            for i in row..(row + LENGTH) {
-                product *= grid[i][col]
+            for slice in grid.iter().skip(row).take(LENGTH) {
+                product *= slice[col]
             }
             if product > greatest_product {
                 greatest_product = product;
@@ -66,7 +66,7 @@ fn read_grid(path: &str) -> Vec<Vec<u32>> {
         .expect("Failed to read file to string");
 
     binding
-        .split("\n")
+        .split('\n')
         .map(|row| {
             row.split_whitespace()
                 .map(|s| u32::from_str(s).unwrap())
