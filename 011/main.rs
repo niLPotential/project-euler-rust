@@ -62,11 +62,9 @@ fn main() {
 }
 
 fn read_grid(path: &str) -> Vec<Vec<u32>> {
-    let binding = String::from_utf8(fs::read(path).expect("Failed to open file from path"))
-        .expect("Failed to read file to string");
-
-    binding
-        .split('\n')
+    String::from_utf8(fs::read(path).expect("Failed to open file from path"))
+        .expect("Failed to read file to string")
+        .lines()
         .map(|row| {
             row.split_whitespace()
                 .map(|s| u32::from_str(s).unwrap())
