@@ -1,7 +1,7 @@
 const TARGET: usize = 1000;
 // TEN = 1010
 fn main() {
-    let mut binary = [false; TARGET + 1];
+    let mut binary = [false; TARGET + 1]; // false is 0, true is 1 for 2^i
     binary[TARGET] = true;
 
     let mut sum = 0;
@@ -9,21 +9,14 @@ fn main() {
     loop {
         let quotient = divide_by_ten(&mut binary);
         let mut remainder = 0;
-        for i in 0..=3 {
-            if binary[i] && remainder < 10 {
+        for (i, &b) in binary.iter().enumerate().take(4) {
+            if b && remainder < 10 {
                 remainder += 2usize.pow(i as u32);
             }
         }
         sum += remainder;
-        // println!("{quotient:?} {binary:?} {remainder}");
 
-        let mut zero = true;
-        quotient.map(|b| {
-            if b {
-                zero = false
-            }
-        });
-        if zero {
+        if quotient.iter().all(|b| !b) {
             break;
         }
         binary = quotient
