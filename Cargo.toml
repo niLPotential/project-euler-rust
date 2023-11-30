@@ -90,3 +90,7 @@ path = "020/main.rs"
 [[bin]]
 name = "021"
 path = "021/main.rs"
+
+[[bin]]
+name = "022"
+path = "022/main.rs"
