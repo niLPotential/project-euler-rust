@@ -1,0 +1,933 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '001'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=001",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "001",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '001'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=001",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "001",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '002'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=002",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "002",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '002'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=002",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "002",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '003'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=003",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "003",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '003'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=003",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "003",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '004'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=004",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "004",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '004'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=004",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "004",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '005'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=005",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "005",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '005'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=005",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "005",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '006'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=006",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "006",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '006'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=006",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "006",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '007'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=007",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "007",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '007'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=007",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "007",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '008'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=008",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "008",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '008'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=008",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "008",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '009'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=009",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "009",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '009'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=009",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "009",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '010'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=010",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "010",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '010'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=010",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "010",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '011'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=011",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "011",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '011'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=011",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "011",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '012'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=012",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "012",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '012'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=012",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "012",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '013'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=013",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "013",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '013'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=013",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "013",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '014'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=014",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "014",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '014'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=014",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "014",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '015'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=015",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "015",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '015'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=015",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "015",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '016'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=016",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "016",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '016'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=016",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "016",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '017'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=017",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "017",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '017'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=017",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "017",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '018'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=018",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "018",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '018'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=018",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "018",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '019'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=019",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "019",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '019'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=019",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "019",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '020'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=020",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "020",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '020'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=020",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "020",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '021'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=021",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "021",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '021'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=021",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "021",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '022'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=022",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "022",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '022'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=022",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "022",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '023'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=023",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "023",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '023'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=023",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "023",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '024'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=024",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "024",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '024'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=024",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "024",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable '025'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=025",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "025",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable '025'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=025",
+                    "--package=project-euler-rust"
+                ],
+                "filter": {
+                    "name": "025",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
